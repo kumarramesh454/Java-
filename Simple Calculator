@@ -1,0 +1,50 @@
+package com.company;
+
+
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+    
+     float numb_1, numb_2;
+        System.out.println("ENTER FIRST NUMBER");
+        Scanner scan=new Scanner(System.in);
+        numb_1 =scan.nextFloat();
+        System.out.println("ENTER SECOND NUMBER");
+        Scanner scan2=new Scanner(System.in);
+        numb_2 =scan2.nextFloat();
+        System.out.print("YOU HAVE ENTERED:  ");
+        System.out.print(numb_1 );
+        System.out.print(" AND ");
+        System.out.println(numb_2);
+        String prompt="Enter 0 for addition, 1 for subtraction, 2 for multiplication, 3 for division";
+        System.out.println(prompt);
+        int input= scan.nextInt();
+        switch(input){
+            case 0:
+                System.out.println("Adding these number");
+                System.out.println("The result is: ");
+                System.out.println(numb_1+numb_2);
+                break;
+            case 1:
+                System.out.println("Subtracting these number");
+                System.out.println("The result is: ");
+                System.out.println(numb_1-numb_2);
+                break;
+            case 2:
+                System.out.println("Multiplying these number");
+                System.out.println("The result is: ");
+                System.out.println(numb_1*numb_2);
+                break;
+            case 3:
+                System.out.println("Dividing these number");
+                System.out.println("The result is: ");
+                System.out.println(numb_1/numb_2);
+                break;
+            default:
+                System.out.println("Invalid value");
+        }
+    }
+}
