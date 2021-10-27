@@ -1,0 +1,28 @@
+package com.company;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+//        ArrayList<String> list =new ArrayList<String>(Arrays.asList(
+//                "kumar ramesh", "ali abdul", "ali awais", "shanker hari","ahad abdul","muhammad mashhood","smart sagar","ali mustafa","sheikh zain","das dharam"));
+//        list.stream()
+//                .filter(s -> s .startsWith("a"))
+//                .map(String::toUpperCase)
+//                .sorted()
+//                .forEach(System.out::println);
+
+
+        ArrayList<String> list =new ArrayList<String>(Arrays.asList(
+                "kumar ramesh", "ali abdul", "ali awais", "shanker hari","ahad abdul","muhammad mashhood","smart sagar","ali mustafa","sheikh zain","das dharam"));
+        list.stream()
+                .map(String::toUpperCase)
+                .sorted()
+                .forEach(System.out::println);
+
+    }
+}
+
