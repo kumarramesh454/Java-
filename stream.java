@@ -32,3 +32,14 @@ public class Main {
 
     }
 }
+
+
+
+
+
+public class Main {
+    public ArrayList<Integer> length(ArrayList<String> list){
+        ArrayList<Integer> output = null;
+        list.stream().filter(s -> s.contains("ABS")||s.contains("abs")).forEach(s -> output.add(s.length()));
+        return output;
+    }
