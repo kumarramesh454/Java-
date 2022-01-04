@@ -1,0 +1,27 @@
+public class Managers extends emp
+{
+    private ArrayList<emp> EmployeeList = new ArrayList<>();
+    @Override
+    public ArrayList<emp> getEmployeeList()
+    {
+        ArrayList<emp> output = new ArrayList<>();
+        for (int i = 0; i < EmployeeList.size(); i++){
+            if (EmployeeList.get(i).name.equals("Ali")){
+                    output.add(EmployeeList.get(i));
+            }
+        }
+        return output;
+    }
+    
+    public int sverage_salary(){
+        int total = 0;
+        int average;
+        
+        for(int i = 0; i < EmployeeList.size(); i++)
+        {
+            total += EmployeeList.get(i).salary;
+        }
+        
+        retrun average = total / EmployeeList.size();
+    }
+}
